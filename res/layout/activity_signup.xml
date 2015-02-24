@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff6699cc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity" >
+
+ 	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:padding="40dp"
+	    android:background="#ffffffff" 
+	    android:orientation="horizontal"
+	    android:gravity="center">
+
+ 		<TextView
+ 		    android:id="@+id/tvAccount"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:layout_alignParentTop="true"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:text="@string/email" />
+ 		
+ 		<LinearLayout
+	        android:id="@+id/llAccount"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	      	android:layout_marginBottom="5dp"
+	        android:orientation="horizontal" 
+	        android:layout_below="@+id/tvAccount" >
+	       
+ 	        <EditText
+ 		       	android:id="@+id/etAccount"
+ 		       	android:layout_width="0dp"
+ 		       	android:layout_weight="1"
+ 		      	android:layout_height="wrap_content"
+ 		      	android:inputType="textEmailAddress" />
+ 	       
+ 	       	<ImageView 
+	          	android:id="@+id/ivAccount"
+	          	android:layout_width="40dp" 
+	          	android:layout_height="40dp" 
+	          	android:src="@drawable/checked" 
+	          	android:contentDescription="@string/empty" />
+ 	        
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/errAccount"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+ 		    android:layout_below="@+id/llAccount"
+	      	android:layout_marginBottom="10dp"
+            android:textColor="#ff0000"
+            android:text="@string/empty" />
+          
+		<TextView
+ 		    android:id="@+id/tvPassword"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:layout_below="@+id/errAccount"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:text="@string/password" />
+ 		
+		<LinearLayout
+	       	android:id="@+id/llPassword"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:layout_marginBottom="5dp"
+	       	android:orientation="horizontal" 
+	       	android:layout_below="@+id/tvPassword" >
+          
+ 	       	<EditText
+ 		      	android:id="@+id/etPassword"
+ 		       	android:layout_width="0dp"
+ 		       	android:layout_weight="1"
+ 		      	android:layout_height="wrap_content"
+ 		      	android:inputType="textPassword" />
+ 	       
+ 	       	<ImageView 
+	          	android:id="@+id/ivPassword"
+	          	android:layout_width="40dp" 
+	          	android:layout_height="40dp" 
+	          	android:src="@drawable/checked"
+	          	android:contentDescription="@string/empty" />
+ 	        
+        </LinearLayout>
+ 		
+		<TextView 
+        	android:id="@+id/errPassword"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+ 		    android:layout_below="@+id/llPassword"
+	      	android:layout_marginBottom="10dp"
+            android:textColor="#ff0000"
+            android:text="@string/empty" />
+          
+		<TextView
+ 		    android:id="@+id/tvRePassword"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_alignParentLeft="true"
+ 		    android:layout_below="@+id/errPassword"
+ 		    android:layout_marginBottom="5dp"
+ 		    android:text="@string/repassword" />
+ 		
+		<LinearLayout
+	       	android:id="@+id/llRePassword"
+	       	android:layout_width="match_parent"
+	       	android:layout_height="wrap_content"
+	      	android:layout_marginBottom="5dp"
+	       	android:orientation="horizontal" 
+	       	android:layout_below="@+id/tvRePassword" >
+          
+ 	       	<EditText
+ 		      	android:id="@+id/etRePassword"
+ 		       	android:layout_width="0dp"
+ 		       	android:layout_weight="1"
+ 		      	android:layout_height="wrap_content"
+ 		      	android:inputType="textPassword" />
+ 	       
+ 	       	<ImageView 
+	          	android:id="@+id/ivRePassword"
+	          	android:layout_width="40dp" 
+	          	android:layout_height="40dp" 
+	          	android:src="@drawable/checked"
+	          	android:contentDescription="@string/empty"/>
+ 	        
+		</LinearLayout>
+ 	    
+        <TextView 
+            android:id="@+id/errRePassword"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+ 		    android:layout_below="@+id/llRePassword"
+	      	android:layout_marginBottom="10dp"
+            android:textColor="#ff0000"
+            android:text="@string/empty" />
+          
+		<Button
+ 		    android:id="@+id/btnLogin"
+ 		    android:layout_width="match_parent"
+ 		    android:layout_height="wrap_content"
+ 		    android:layout_below="@+id/errRePassword"
+ 		    android:background="#ff6699cc"
+ 		    android:text="@string/signup" 
+ 		    android:textSize="24sp"
+ 		    android:textColor="#ffffffff"
+ 		    android:gravity="center" 
+ 		    android:onClick="onSignup"/>
+
+	</RelativeLayout>
+</LinearLayout>

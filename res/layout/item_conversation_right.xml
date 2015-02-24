@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal" >
+    
+	<RelativeLayout  
+	    android:layout_width="wrap_content"  
+	    android:layout_height="wrap_content"
+	    android:gravity="right" >  
+	  
+	    <RelativeLayout  
+	        android:id="@+id/bubble_lay_1"
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content" >
+	        
+		    <ImageView
+		       	android:id="@+id/right_1"  
+		       	android:background="@drawable/left_1"  
+		       	android:layout_width="wrap_content"  
+		       	android:layout_height="wrap_content" 
+		       	android:contentDescription="@string/empty" />  
+		     
+			<ImageView  
+			   	android:id="@+id/right_2"  
+			   	android:background="@drawable/left_2"
+			   	android:layout_width="wrap_content"  
+			   	android:layout_height="wrap_content"  
+			   	android:layout_toRightOf="@id/right_1"
+		       	android:contentDescription="@string/empty" />  
+					
+			<ImageView  
+			  	android:id="@+id/right_3"  
+			  	android:background="@drawable/left_3"  
+			  	android:layout_width="wrap_content"  
+			  	android:layout_height="wrap_content"  
+			  	android:layout_toRightOf="@id/right_2"  
+		      	android:contentDescription="@string/empty" />  
+		    
+		</RelativeLayout>  
+	  
+	    <RelativeLayout  
+	        android:id="@+id/bubble_lay_2"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/bubble_lay_1" >
+			
+	        <ImageView  
+	            android:id="@+id/right_4"  
+	            android:background="@drawable/left_4"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+		      	android:contentDescription="@string/empty" />  
+	              
+	        <TextView  
+	            android:id="@+id/right_5"
+	            android:background="@drawable/left_5"  
+	            android:textColor="#000000"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:layout_toRightOf="@id/right_4" 
+	            android:padding="0dp" />
+	          
+	        <ImageView  
+	            android:id="@+id/right_6"  
+	            android:background="@drawable/left_6"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:layout_toRightOf="@id/right_5"  
+		      	android:contentDescription="@string/empty" />  
+	         
+	    </RelativeLayout>  
+	      
+	    <RelativeLayout  
+	        android:id="@+id/bubble_lay_3"  
+	        android:layout_width="wrap_content"  
+	        android:layout_height="wrap_content"  
+	        android:layout_below="@id/bubble_lay_2" >
+	          
+	        <ImageView  
+	            android:id="@+id/right_7"  
+	            android:background="@drawable/left_7"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+		      	android:contentDescription="@string/empty" />  
+	                        
+	        <ImageView  
+	            android:id="@+id/right_8"  
+	            android:background="@drawable/left_8"   
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:layout_toRightOf="@id/right_7"  
+		      	android:contentDescription="@string/empty" />
+	          
+	        <ImageView  
+	            android:id="@+id/right_9"  
+	            android:background="@drawable/left_9"  
+	            android:layout_width="wrap_content"  
+	            android:layout_height="wrap_content"  
+	            android:layout_toRightOf="@id/right_8"  
+		      	android:contentDescription="@string/empty" />  
+	         
+	    </RelativeLayout>
+	
+	</RelativeLayout>
+	  
+    <ImageView
+        android:id="@+id/ivPicture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/profile" 
+        android:contentDescription="@string/empty"/>
+      
+</LinearLayout>

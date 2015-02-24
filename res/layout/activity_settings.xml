@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    android:background="#ffffffff"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity" >
+
+    <LinearLayout
+        android:orientation="vertical"
+		android:layout_width="fill_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1" >
+	    <ImageView
+	        android:id="@+id/ivPicture"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:scaleType="fitStart" 
+	        android:layout_marginBottom="@dimen/margin_bottom"
+	        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	        android:layout_marginRight="@dimen/activity_horizontal_margin"
+	        android:layout_marginTop="@dimen/activity_vertical_margin"
+	        android:src="@drawable/profile"
+	        android:onClick="onPicture"
+	        android:padding="0dp"
+	        android:background="#00000000" 
+	        android:contentDescription="@string/empty"/>
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="vertical"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+	    android:layout_marginRight="@dimen/activity_horizontal_margin">
+        	    
+	   	<TextView
+	        android:id="@+id/tvNickName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/margin_bottom"
+	        android:text="@string/nickname" 
+	        android:textSize="@dimen/text_size" />
+	
+	    <EditText
+	        android:id="@+id/etNickName"
+	        android:layout_width="200dp"
+	        android:layout_height="wrap_content"
+	        android:padding="8dp"
+	        android:layout_marginBottom="2dp"
+	        android:background="@drawable/box"
+	        android:inputType="text" 
+	        android:textSize="@dimen/text_size" />
+	
+        <TextView 
+            android:id="@+id/errNickName"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+	        android:layout_marginBottom="@dimen/margin_bottom"
+            android:textColor="#ff0000"
+            android:text="@string/empty" />
+          
+	    <RadioGroup
+	        android:id="@+id/rgGender"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/margin_bottom"
+	        android:orientation="horizontal" >
+	        
+	        <RadioButton
+	            android:id="@+id/rbMale"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:checked="true"
+	            android:text="@string/male" 
+	            android:textSize="@dimen/text_size" />
+	
+	        <RadioButton
+	            android:id="@+id/rbFemale"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/female" 
+	            android:textSize="@dimen/text_size" />
+	    </RadioGroup>
+	
+	    <TextView
+	        android:id="@+id/tvEmail"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="@dimen/margin_bottom"
+	        android:text="@string/email" 
+	        android:textSize="@dimen/text_size" />
+	
+	    <TextView
+	        android:id="@+id/tvInfo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="2dp"
+	        android:text="@string/settinginfo" 
+	        android:textSize="12sp" 
+	        android:textColor="#ff999999"/>
+	
+	    <EditText
+	        android:id="@+id/etEmail"
+	        android:layout_width="300dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginBottom="2dp"
+	        android:padding="8dp"
+	        android:background="@drawable/box"
+	        android:inputType="textEmailAddress" 
+	        android:textSize="@dimen/text_size" />
+	    
+        <TextView 
+            android:id="@+id/errEmail"
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:textColor="#ff0000"
+            android:text="@string/empty" />
+          
+	</LinearLayout>
+	
+    <LinearLayout
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+	    android:layout_height="50dp" 
+	    android:background="#ffdddddd" >
+          
+	    <Button
+	        android:id="@+id/btnCancel"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:text="@string/cancel" 
+	        android:onClick="onCancel"/>
+
+	    <Button
+	        android:id="@+id/btnDone"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:text="@string/done" 
+	        android:onClick="onDone"/>
+
+	    <Button
+	        android:id="@+id/btnDelete"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:text="@string/delete" 
+	        android:onClick="onDelete"/>
+	    
+	    <Button
+	        android:id="@+id/btnAdd"
+	        android:layout_width="0dp"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:background="#00000000"
+	        android:text="@string/add" 
+	        android:onClick="onAdd"/>
+	    
+	</LinearLayout>
+</LinearLayout>

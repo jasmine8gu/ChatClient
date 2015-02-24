@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff6699cc"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+ 	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" 
+	    android:paddingBottom="100dp"
+	    android:background="#ffffffff" 
+	    android:orientation="horizontal"
+	    android:gravity="center">
+
+ 		<ImageView
+ 		    android:id="@+id/ivBT"
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_margin="20dp"
+ 		    android:layout_weight="1"
+ 		    android:contentDescription="@string/empty"
+ 		    android:onClick="onBt"
+ 		    android:scaleType="fitCenter"
+ 		    android:src="@drawable/bt" />
+
+ 		<ImageView
+ 		    android:id="@+id/ivWifi"
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_margin="20dp"
+ 		    android:layout_weight="1"
+ 		    android:contentDescription="@string/empty"
+ 		    android:onClick="onWifi"
+ 		    android:scaleType="fitCenter"
+ 		    android:src="@drawable/wifi" />
+	    
+ 		<ImageView
+ 		    android:id="@+id/ivInet"
+ 		    android:layout_width="0dp"
+ 		    android:layout_height="fill_parent"
+ 		    android:layout_margin="20dp"
+ 		    android:layout_weight="1"
+ 		    android:contentDescription="@string/empty"
+ 		    android:onClick="onInet"
+ 		    android:scaleType="fitCenter"
+ 		    android:src="@drawable/inet" />
+ 	</LinearLayout>
+</LinearLayout>
